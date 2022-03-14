@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>account-maker</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="manifest" href="manifest_ex2.json">
+    </head>
+    <body>
+        <form>
+            
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label for="usr">Nome:</label>
+                        <input type="text" class="form-control" required id="name">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label for="usr">Email:</label>
+                        <input type="email" class="form-control" required id="email">
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <div class="col-xs-4">
+                        <label for="usr">Numero de telemovel:</label>
+                        <input type="tel" class="form-control" pattern="[0-9]{9}" required id="tel">
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <div class="col-xs-4">
+                            <label for="usr">Morada:</label>
+                    <input type="text" class="form-control" required id="morada">
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <div class="col-xs-4">
+                        <label for="usr">NIF:</label>
+                        <input type="number" class="form-control" required id="nif">
+                    </div>
+                </div>
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <label for="comment">Observacoes:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-xs-2">
+                    <button type="submit" class="form-control" onclick="myFunction()">Enviar</button>
+                </div>
+            </div>
+          </form>
+        
+    
+        <script>
+            function myFunction() {
+                document.querySelectorAll('id').reset;
+                console.log('Dados recebidos com sucesso');
+                }
+
+
+
+
+                
+                
+               
+            
+            
+
+        </script>
+    </body>
+</html>

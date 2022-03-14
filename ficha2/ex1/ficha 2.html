@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <Title>Euromilhões</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="manifest" href="manifest.json">
+        
+    </head>
+    <body>
+        <center><button type="button" class="btn" id="numbers" onclick="MyFunction()">Gerar</button> 
+        <h1>Numeros</h1>
+        <p id="show_number"></p>
+        <div class="container">
+        <h1 style="color: rgb(255, 208, 0);">Estrelas</h1>
+       
+        </div>
+        <p id="show_stars"></p></center>
+    </body>
+    <script>
+        function MyFunction() {
+            let number = [];
+                while(number.length < 5){
+                    let r = Math.floor(Math.random() * 50) + 1;
+                    if(number.indexOf(r) === -1) number.push(r);
+                }
+                document.getElementById("show_number").innerHTML = number;
+
+            let stars = [];
+                while(stars.length < 2){
+                    let s = Math.floor(Math.random() * 12) + 1;
+                    if(stars.indexOf(s) === -1) stars.push(s);
+                }
+               
+
+            
+            document.getElementById("show_stars").innerHTML = stars;
+            
+        }
+    </script>
+</html>

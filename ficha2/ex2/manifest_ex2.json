@@ -1,0 +1,13 @@
+{
+    "name": "account-maker DAM",
+    "short_name": "Account-maker",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "ficha2/icons/icon.jpg",
+            "type": "image/jpg",
+            "sizes": "512x512"
+        }
+    ]
+}
